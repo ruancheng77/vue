@@ -106,7 +106,7 @@
    * If the conversion fails, return original string.
    */
   function toNumber (val) {
-    var n = parseFloat(val);
+    var n = +val;
     return isNaN(n) ? val : n
   }
 
